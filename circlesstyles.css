@@ -34,8 +34,7 @@ header .logo img {
     margin-right: 10px;
 }
 
-header .logo h1, header .logo h2 {
-    color: #F4A300;
+header .logo h1, header .logo h2 {color: #F4A300;
 }
 
 header .logo h1 {
@@ -44,7 +43,6 @@ header .logo h1 {
 
 header .logo h2 {
     font-size: 1.2em;
-    color: #F4A300;
 }
 
 /* Navigation Styling */
