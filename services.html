@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - ISAT-U Forum</title>
+    <link rel="stylesheet" href="servicesstyle.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="ISAT-U Logo" class="header-image">
+            <div class="header-text">
+                <h1>ISAT-U SMART CAMPUS</h1>
+                <h2>ISAT-U FORUM</h2>
+            </div>
+        </div>
+        <nav>
+            <button id="menuButton" class="menu-button">Menu</button>
+            <ul id="navLinks" class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="newposts.html">New Posts</a></li>
+                <li><a href="topposts.html">Top Posts</a></li>
+                <li><a href="circles.html">Circles</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services">
+            <h2>Services Offered by ISAT-U Forum</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>Online Learning Resources</h3>
+                    <p>Access a wide range of academic materials and learning resources from the university's online portal.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Discussion Boards</h3>
+                    <p>Engage in discussions on various topics related to academics, student life, and more on the forum.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Student Support</h3>
+                    <p>Get assistance and support for academic issues, study groups, or personal challenges from peers and faculty.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Events and Announcements</h3>
+                    <p>Stay updated with the latest university events, workshops, and official announcements through the forum.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Job and Internship Listings</h3>
+                    <p>Find internship opportunities and job postings specifically tailored for ISAT-U students.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Collaborative Projects</h3>
+                    <p>Join collaborative projects and research groups to enhance your learning and practical experience.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ISAT-U Forum</p>
+        <p>For more info, visit <u><a href="https://www.isatu.edu.ph" target="_blank" style="color: gold; text-decoration: none;">www.isatu.edu.ph</u></a>.</p>
+    </footer>
+
+    <script>
+        document.getElementById('menuButton').addEventListener('click', function() {
+            var navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

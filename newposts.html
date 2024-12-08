@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Posts - ISAT-U Forum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="ISAT-U Logo" class="header-image">
+            <div class="header-text">
+                <h1>ISAT-U SMART CAMPUS</h1>
+                <h2>ISAT-U FORUM</h2>
+            </div>
+        </div>
+        <nav>
+            <button id="menuButton" class="menu-button">Menu</button>
+            <ul id="navLinks" class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="newposts.html">New Posts</a></li>
+                <li><a href="topposts.html">Top Posts</a></li>
+                <li><a href="circles.html">Circles</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>New Posts</h2>
+        <section class="posts">
+            <!-- Example Post 1 -->
+            <div class="post">
+                <div class="post-votes">
+                    <button class="upvote">▲</button>
+                    <p class="votes-count">15</p>
+                    <button class="downvote">▼</button>
+                </div>
+                <div class="post-content">
+                    <h3 class="post-title">A New Trend in Technology</h3>
+                    <p class="post-description">This post discusses the latest advancements in AI and how it's shaping the future...</p>
+                    <a href="#" class="comments-link">View Comments</a>
+                </div>
+            </div>
+            
+            <!-- Example Post 2 -->
+            <div class="post">
+                <div class="post-votes">
+                    <button class="upvote">▲</button>
+                    <p class="votes-count">8</p>
+                    <button class="downvote">▼</button>
+                </div>
+                <div class="post-content">
+                    <h3 class="post-title">Best Programming Languages to Learn in 2024</h3>
+                    <p class="post-description">An insightful post exploring the most popular and emerging programming languages...</p>
+                    <a href="#" class="comments-link">View Comments</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ISAT-U Forum</p>
+        <p>For more info, visit <u><a href="https://www.isatu.edu.ph" target="_blank" style="color: gold; text-decoration: none;">www.isatu.edu.ph</u></a>.</p>
+    </footer>
+
+    <script>
+        // JavaScript to toggle the navigation links visibility
+        document.getElementById('menuButton').addEventListener('click', function() {
+            var navLinks = document.getElementById('navLinks');
+            // Toggle the visibility of the navigation menu
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

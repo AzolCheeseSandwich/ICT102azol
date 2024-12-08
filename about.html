@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit-Like Forum</title>
+    <link rel="stylesheet" href="aboutstyle.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="ISAT-U Logo" class="header-image">
+            <div class="header-text">
+                <h1>ISAT-U SMART CAMPUS</h1>
+                <h2>ISAT-U FORUM</h2>
+            </div>
+        </div>
+        <nav>
+            <!-- Menu button -->
+            <button id="menuButton" class="menu-button">Menu</button>
+            
+            <!-- Navigation links (initially hidden) -->
+            <ul id="navLinks" class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="newposts.html">New Posts</a></li>
+                <li><a href="topposts.html">Top Posts</a></li>
+                <li><a href="#">Circles</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section class="about">
+            <h2 style="color: #F4A300;">About ISAT-U Forum</h2>
+            <p>Welcome to the ISAT-U Forum, a platform designed to connect students, faculty, and staff of the Iloilo Science and Technology University (ISAT-U). This forum functions much like popular online communities, enabling users to share ideas, discuss topics, post questions, and vote on submissions made by others. Whether you're sharing a project idea, discussing academic topics, or engaging in casual conversation, this space is built for collaboration and community-building. Join the conversation and become a part of the ISAT-U online community!</p>
+    </section>
+
+<!-- Team Section -->
+        <section class="team-section">
+            <h2>Meet the Team</h2>
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="janz.jpg" alt="Member 1" class="team-image">
+                    <div class="member-info">
+                        <h3>Project Manager / Lead Developer</h3>
+                        <p>Janzen Loza</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="kyle.jpg" alt="Member 2" class="team-image">
+                    <div class="member-info">
+                        <h3>Front-End Developer / UI/UX Designer</h3>
+                        <p>Kyle Johnsen Anastacio</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="matthew.jpg" alt="Member 3" class="team-image">
+                    <div class="member-info">
+                        <h3>Back-End Developer / Content Manager</h3>
+                        <p>Mathew Sarmiento</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+     </main>
+
+    <footer>
+        <p>&copy; 2024 ISAT-U Forum</p>
+    </footer>
+
+    <script>
+        // JavaScript to toggle the navigation links visibility
+        document.getElementById('menuButton').addEventListener('click', function() {
+            var navLinks = document.getElementById('navLinks');
+            // Toggle the visibility of the navigation menu
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

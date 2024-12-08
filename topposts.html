@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit-Like Forum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="ISAT-U Logo" class="header-image";>
+            <div class="header-text">
+                <h1>ISAT-U SMART CAMPUS</h1>
+                <h2>ISAT-U FORUM</h2>
+            </div>
+        </div>
+        <nav>
+            <!-- Menu button -->
+            <button id="menuButton" class="menu-button">Menu</button>
+            
+            <!-- Navigation links (initially hidden) -->
+            <ul id="navLinks" class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="newposts.html">New Posts</a></li>
+                <li><a href="topposts.html">Top Posts</a></li> <!-- Updated to link to the Top Posts page -->
+                <li><a href="circles.html">Circles</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Top Posts List -->
+        <section class="top-posts">
+            <h2>Top Posts</h2>
+            <!-- Post 1 -->
+            <div class="post">
+                <div class="post-votes">
+                    <button class="upvote">▲</button>
+                    <p class="votes-count">50</p>
+                    <button class="downvote">▼</button>
+                </div>
+                <div class="post-content">
+                    <h3 class="post-title">Top Post Example 1</h3>
+                    <p class="post-description">This is the description for the top post...</p>
+                    <a href="#" class="comments-link">View Comments</a>
+                </div>
+            </div>
+            
+            <!-- Post 2 -->
+            <div class="post">
+                <div class="post-votes">
+                    <button class="upvote">▲</button>
+                    <p class="votes-count">40</p>
+                    <button class="downvote">▼</button>
+                </div>
+                <div class="post-content">
+                    <h3 class="post-title">Top Post Example 2</h3>
+                    <p class="post-description">This is another top post description...</p>
+                    <a href="#" class="comments-link">View Comments</a>
+                </div>
+            </div>
+
+            <!-- Post 3 -->
+            <div class="post">
+                <div class="post-votes">
+                    <button class="upvote">▲</button>
+                    <p class="votes-count">30</p>
+                    <button class="downvote">▼</button>
+                </div>
+                <div class="post-content">
+                    <h3 class="post-title">Top Post Example 3</h3>
+                    <p class="post-description">This is the description of another popular post...</p>
+                    <a href="#" class="comments-link">View Comments</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ISAT-U Forum</p>
+        <p>For more info, visit <u><a href="https://www.isatu.edu.ph" target="_blank" style="color: gold; text-decoration: none;">www.isatu.edu.ph</u></a>.</p>
+    </footer>
+
+    <script>
+        // JavaScript to toggle the navigation links visibility
+        document.getElementById('menuButton').addEventListener('click', function() {
+            var navLinks = document.getElementById('navLinks');
+            // Toggle the visibility of the navigation menu
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
